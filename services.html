@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main {
+      padding-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.png?v=12" alt="Avlixor Logo">
+        <span class="brand-name">Avlixor</span>
+      </a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <!-- Mobile dropdown navigation (toggled by JS) -->
+    <div class="mobile-nav-active" id="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">What We Do</h1>
+        <p class="intro-text fade-in">
+          Avlixor helps brands work with the right influencers and manage everything that comes with it. Whether you
+          want one quick shoutout or a full campaign with multiple creators, we handle the entire process from start to
+          finish. we’ve got your back.
+        </p>
+
+        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px; margin-top: 20px;">Our Services</h2>
+
+        <div class="services-list-container fade-in">
+          <!-- 1. Influencer Marketing -->
+          <div class="service-detail-card">
+            <h3>Influencer Marketing</h3>
+            <p>We plan and execute complete influencer campaigns. This includes selecting the right creators, handling
+              communication, finalising deliverables, and making sure everything goes live on time. Brands don't have to
+              deal with multiple creators or confusing messages — we manage it all in one place.</p>
+          </div>
+
+          <!-- 2. Influencer Outreach -->
+          <div class="service-detail-card">
+            <h3>Influencer Outreach</h3>
+            <p>If you already know what type of influencers you want, we take care of the entire outreach process. We
+              contact creators, negotiate pricing, share your brief, and lock in deals faster.</p>
+            <p><strong>What brands get:</strong></p>
+            <ul class="service-list">
+              <li>Transparent pricing</li>
+              <li>Reliable influencers</li>
+              <li>Faster confirmations</li>
+              <li>No wasted time scrolling Instagram for creators</li>
+            </ul>
+          </div>
+
+          <!-- 3. One-Time Collaborations -->
+          <div class="service-detail-card">
+            <h3>One-Time Collaborations</h3>
+            <p>Perfect for brands that want quick results without long-term commitments. You get a single dedicated
+              post/reel/video from a creator that fits your product.</p>
+            <p><strong>Common uses:</strong></p>
+            <ul class="service-list">
+              <li>App launch</li>
+              <li>Tool promotion</li>
+              <li>Festive offers</li>
+              <li>New feature announcements</li>
+            </ul>
+          </div>
+
+          <!-- 4. Influencer Partnerships -->
+          <div class="service-detail-card">
+            <h3>Influencer Partnerships</h3>
+            <p>Some brands want consistency, not one-offs. We help build long-term creator relationships where
+              influencers post regularly and create stronger trust with the audience.</p>
+            <p><strong>Why this works:</strong> People trust repeated visibility more than a single post.</p>
+          </div>
+
+          <!-- 5. Campaign Management -->
+          <div class="service-detail-card">
+            <h3>Campaign Management</h3>
+            <p>Running influencer campaigns can get messy — too many chats, deadlines, revisions, and follow-ups. We
+              manage all of it so brands don’t have to.</p>
+            <p><strong>We handle:</strong></p>
+            <ul class="service-list">
+              <li>Briefing creators</li>
+              <li>Approvals & revisions</li>
+              <li>Scheduling posts</li>
+              <li>Making sure deadlines are met</li>
+              <li>Tracking content after it goes live</li>
+            </ul>
+          </div>
+
+          <!-- 6. UGC Content -->
+          <div class="service-detail-card">
+            <h3>UGC Content (User-Generated Content)</h3>
+            <p>Creators record natural, simple, real-looking videos that brands can use for ads, websites, landing
+              pages, and social media.</p>
+            <p><strong>Why brands love UGC:</strong></p>
+            <ul class="service-list">
+              <li>Looks real, not scripted</li>
+              <li>Works better in ads</li>
+              <li>Builds instant trust</li>
+              <li>Cheaper than traditional production</li>
+            </ul>
+            <p>We provide creators who specialise in UGC formats that perform well.</p>
+          </div>
+
+          <!-- 7. Talent Management for Creators -->
+          <div class="service-detail-card">
+            <h3>Talent Management for Creators</h3>
+            <p>Creators often struggle with brand deals, pricing, negotiation, deadlines, and communication. We help
+              them stay organised and build a strong pipeline of paid collaborations.</p>
+            <p><strong>We support creators with:</strong></p>
+            <ul class="service-list">
+              <li>Brand outreach</li>
+              <li>Negotiation</li>
+              <li>Deal structuring</li>
+              <li>Deadlines & approvals</li>
+              <li>Long-term partnerships</li>
+            </ul>
+            <p style="margin-top: 10px;">( When creators grow, brands also get better results — it’s a win-win. )</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 60px; text-align: center;">
+          <a href="index.html#contact" class="cta-button primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content-wrapper">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/avlixor?igsh=MTR4azF5YmE2Mm1scw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@avlixor-77" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+        </a>
+        <a href="https://www.threads.net/@avlixor" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c2.42 0 4.64-.86 6.38-2.3L16.5 18C15.22 19.1 13.68 19.8 12 19.8c-4.3 0-7.8-3.5-7.8-7.8s3.5-7.8 7.8-7.8c3.4 0 6.3 2.2 7.3 5.2h-2.1C16.3 8 14.3 6.6 12 6.6c-3 0-5.4 2.4-5.4 5.4s2.4 5.4 5.4 5.4c1.8 0 3.4-1 4.3-2.5l1.6 1.1c-1.3 2-3.6 3.4-6 3.4-3.9 0-7.1-3.2-7.1-7.1S8.1 4.9 12 4.9s7.1 3.2 7.1 7.1c0 1.8-.7 3.5-1.9 4.7l1.4 1.4C20.1 16.5 21 14.3 21 12c0-5.52-4.48-10-10-10z"></path>
+          </svg>
+        </a>
+        <a href="https://x.com/Avlixor" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2026 Avlixor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

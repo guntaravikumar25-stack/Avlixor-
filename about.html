@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Avlixor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page specific adjustment for fixed header */
+    main {
+      padding-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.png?v=12" alt="Avlixor Logo">
+        <span class="brand-name">Avlixor</span>
+      </a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <!-- Mobile dropdown navigation (toggled by JS) -->
+    <div class="mobile-nav-active" id="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero section" style="padding-bottom: 0;">
+      <div class="container">
+        <h1 class="headline fade-in"
+          style="font-size: 2.5rem; margin-bottom: 40px; background: linear-gradient(135deg, #FFFFFF, #CCCCCC); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+          Avlixor is an influencer marketing agency built to help brands collaborate with the right creators!</h1>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="container">
+        <h2 class="section-title">Who Are We</h2>
+        <div class="about-content fade-in">
+          <p class="section-desc"
+            style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.2rem;">
+            Avlixor LLC is a India registered company based in Wyoming, operating as a global influencer
+            marketing agency built to help brands collaborate with the right creators—quickly, clearly, and without
+            confusion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <div class="about-services-list fade-in">
+          <div class="about-card-list">
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">Influencer Marketing</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">Influencer Outreach</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">One-Time Collabs</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">Influencer Partnerships</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">Campaign Management</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-bullet"></span>
+              <span class="about-card-text">UGC Content</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 60px; text-align: center;">
+          <a href="index.html#contact" class="cta-button primary">Work With Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content-wrapper">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/avlixor?igsh=MTR4azF5YmE2Mm1scw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@avlixor-77" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+        </a>
+        <a href="https://www.threads.net/@avlixor" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c2.42 0 4.64-.86 6.38-2.3L16.5 18C15.22 19.1 13.68 19.8 12 19.8c-4.3 0-7.8-3.5-7.8-7.8s3.5-7.8 7.8-7.8c3.4 0 6.3 2.2 7.3 5.2h-2.1C16.3 8 14.3 6.6 12 6.6c-3 0-5.4 2.4-5.4 5.4s2.4 5.4 5.4 5.4c1.8 0 3.4-1 4.3-2.5l1.6 1.1c-1.3 2-3.6 3.4-6 3.4-3.9 0-7.1-3.2-7.1-7.1S8.1 4.9 12 4.9s7.1 3.2 7.1 7.1c0 1.8-.7 3.5-1.9 4.7l1.4 1.4C20.1 16.5 21 14.3 21 12c0-5.52-4.48-10-10-10z"></path>
+          </svg>
+        </a>
+        <a href="https://x.com/Avlixor" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2026 Avlixor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

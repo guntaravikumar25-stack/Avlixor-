@@ -874,3 +874,17 @@ h1, h2, h3, h4 {
     padding-right: max(20px, env(safe-area-inset-right));
   }
 }
+}
+
+.eagle-card {
+    max-width: 220px !important;
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.eagle-card-img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}

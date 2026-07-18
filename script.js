@@ -77,4 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { passive: true }); // passive listener for high-performance touch scrolling on Android
+  // Eagle card click animation
+    document.querySelectorAll('.eagle-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
 });
+

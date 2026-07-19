@@ -1,9 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Viewport locked to a mobile width so the site always renders the mobile layout, regardless of actual device/screen size -->
+  <meta name="viewport" content="width=480, initial-scale=1.0">
   <title>Avlixor | Influencer Marketing & Brand Collaboration Agency</title>
   <meta name="description" content="Avlixor is a leading influencer marketing agency connecting brands with top social media influencers for powerful collaborations, promotions, and digital growth.">
   <meta name="keywords" content="Avlixor, influencer marketing agency, brand collaboration, influencer agency, social media marketing, Instagram influencers, YouTube brand deals, digital marketing agency">
@@ -14,272 +15,11 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.avlixor.com">
   <meta property="og:image" content="https://www.avlixor.com/preview.jpg">
-  
+
   <!-- Fonts and Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Services & Accordions Section -->
-<section class="section">
-  <div class="container">
-    
-    <!-- How We Work Accordion -->
-    <details class="accordion-item" open>
-      <summary class="accordion-header">How We Work</summary>
-      <div class="accordion-content">
-        <div class="stack-wrapper">
-          <div class="stack-cards-container">
-            <!-- Phase 1 -->
-            <div class="eagle-card active">
-              <div class="card-inner-layout">
-                <span class="card-stage-badge">Phase 01</span>
-                <div class="work-step">
-                  <h4>Discovery & Strategy</h4>
-                  <p>We dive deep into your brand identity, market positioning, and target audience to map out a tailored execution plan.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Phase 2 -->
-            <div class="eagle-card stack-back">
-              <div class="card-inner-layout">
-                <span class="card-stage-badge">Phase 02</span>
-                <div class="work-step">
-                  <h4>Creative Execution</h4>
-                  <p>Our team brings the strategy to life, crafting premium visual assets and high-impact digital experiences.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Phase 3 -->
-            <div class="eagle-card stack-deep">
-              <div class="card-inner-layout">
-                <span class="card-stage-badge">Phase 03</span>
-                <div class="work-step">
-                  <h4>Launch & Optimize</h4>
-                  <p>We deploy the campaign, track performance metrics in real-time, and continuously iterate for maximum ROI.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </details>
-
-    <!-- Contact Accordion -->
-    <details class="accordion-item">
-      <summary class="accordion-header">Get In Touch</summary>
-      <div class="accordion-content">
-        <div class="contact-section-inner">
-          <form class="contact-form" action="#" method="POST">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="John Doe">
-            </div>
-            
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="john@example.com">
-            </div>
-            
-            <div class="form-group form-group-full">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
-            </div>
-            
-            <div class="form-group form-group-full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
-            </div>
-
-            <!-- Fixed: Added missing form submit button -->
-            <button type="submit" class="cta-button primary">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </details>
-
-  </div>
-</section>
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Custom Styles for Accordions and Card Stack Layouts -->
-  <style>
-    /* Image Resizing */
-    @media (min-width: 768px) {
-      .hero-logo-container {
-        max-width: 240px; /* Made larger from 150px */
-        margin: 0 auto;
-      }
-      .hero-logo-img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    /* Accordion Custom Layout styling - Pure Deep Black Background */
-    .accordion-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .accordion-item {
-      background: #000000 !important;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      margin-bottom: 15px;
-      overflow: hidden;
-      transition: border-color 0.3s ease;
-    }
-    .accordion-item[open] {
-      background: #000000 !important;
-      border-color: rgba(59, 130, 246, 0.4);
-    }
-    .accordion-header {
-      font-size: 1.4rem;
-      font-weight: 600;
-      padding: 20px;
-      cursor: pointer;
-      list-style: none;
-      position: relative;
-      outline: none;
-      user-select: none;
-      color: #ffffff;
-    }
-    .accordion-header::-webkit-details-marker {
-      display: none;
-    }
-    .accordion-header::after {
-      content: '+';
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
-      color: #ffffff;
-    }
-    .accordion-item[open] .accordion-header::after {
-      content: '−';
-    }
-    .accordion-content {
-      padding: 0 20px 20px 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.04);
-      background: #000000;
-      animation: slideDown 0.3s ease-out;
-    }
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-5px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Section descriptions inside accordions */
-    .section-desc {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
-    /* Animated Stack Cards Framework */
-    .stack-wrapper {
-      width: 100%;
-      max-width: 480px;
-      margin: 40px auto;
-      perspective: 1000px;
-    }
-    .stack-cards-container {
-      position: relative;
-      width: 100%;
-      height: 420px; 
-    }
-    .stack-wrapper .eagle-card {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      max-width: 100% !important;
-      height: 100% !important;
-      background: #0a0a0c;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
-      padding: 30px;
-      cursor: pointer;
-      user-select: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
-                  opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
-                  box-shadow 0.4s ease, 
-                  border-color 0.4s ease;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-      opacity: 0;
-      transform: translateY(20px) scale(0.9) rotateX(-5deg);
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    /* Internal Card Layout Text Typography */
-    .card-inner-layout {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      text-align: left;
-    }
-    .card-stage-badge {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: #3b82f6;
-      font-weight: 700;
-    }
-    .work-step h4 {
-      font-size: 1.25rem;
-      margin-bottom: 6px;
-      color: #ffffff;
-    }
-    .work-step p {
-      font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.7);
-      line-height: 1.5;
-    }
-
-    /* Active Visual Stack States */
-    .stack-wrapper .eagle-card.active {
-      opacity: 1;
-      transform: translateY(0) scale(1) rotateX(0deg);
-      pointer-events: auto;
-      z-index: 10;
-      border-color: rgba(59, 130, 246, 0.4);
-      box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15);
-    }
-    .stack-wrapper .eagle-card.stack-back {
-      opacity: 0.6;
-      transform: translateY(16px) scale(0.94) translateZ(-20px);
-      pointer-events: auto;
-      z-index: 5;
-    }
-    .stack-wrapper .eagle-card.stack-deep {
-      opacity: 0.25;
-      transform: translateY(32px) scale(0.88) translateZ(-40px);
-      pointer-events: auto;
-      z-index: 2;
-    }
-
-    /* Desktop Upscaling Media Target Overrides */
-    @media (min-width: 768px) {
-      .stack-wrapper {
-        max-width: 540px;
-      }
-      .stack-cards-container {
-        height: 440px;
-      }
-      .work-step h4 {
-        font-size: 1.35rem;
-      }
-      .work-step p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -321,8 +61,8 @@
         <h1 class="headline fade-in">Turn Your Influence Into <span class="gradient-text">Real Income</span></h1>
         <p class="sub-text fade-in delay-1">We help brands find the right creators and manage influencer campaigns from strategy to execution — end-to-end.</p>
         <div class="hero-buttons fade-in delay-2">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe96ChbQLAkqBYERzLpjXAVDibm0iYDgUpRxxOFYsmZHdPKIg/viewform?usp=header" target="_blank" class="cta-button primary">For Brands</a>
-          <a href="https://forms.gle/kNXriUhm35iSKmCE8" target="_blank" class="cta-button secondary">For Influencers</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe96ChbQLAkqBYERzLpjXAVDibm0iYDgUpRxxOFYsmZHdPKIg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="cta-button primary">For Brands</a>
+          <a href="https://forms.gle/kNXriUhm35iSKmCE8" target="_blank" rel="noopener noreferrer" class="cta-button secondary">For Influencers</a>
         </div>
       </div>
     </section>
@@ -344,8 +84,7 @@
 
     <!-- Interactive Accordions Container -->
     <div class="accordion-container">
-
-      <!-- 1. WHAT WE DO ACCORDION -->
+<!-- 1. WHAT WE DO ACCORDION -->
       <details id="what-we-do" class="accordion-item" open>
         <summary class="accordion-header">What We Do</summary>
         <div class="accordion-content">
@@ -392,19 +131,24 @@
         <summary class="accordion-header">How We Work</summary>
         <div class="accordion-content">
           <p class="section-desc">Our optimized framework ensures consistency and transparent ROI across every campaign execution phase.</p>
-          
-          <!-- Interactive 3-Card Stack Component -->
+
+          <!-- Interactive Eagle Card Stack Component: one step per card -->
           <div class="stack-wrapper">
             <div class="stack-cards-container">
-              
-              <!-- Card 1: Setup Phase -->
+
               <div class="eagle-card active" data-index="0">
                 <div class="card-inner-layout">
-                  <span class="card-stage-badge">Phase 01 / Setup</span>
+                  <span class="card-stage-badge">Phase 01</span>
                   <div class="work-step">
                     <h4>Define the Goal</h4>
                     <p>Every campaign starts with clarity: awareness, sales, app installs, or brand trust. We align on what success actually looks like before touching a single platform.</p>
                   </div>
+                </div>
+              </div>
+
+              <div class="eagle-card" data-index="1">
+                <div class="card-inner-layout">
+                  <span class="card-stage-badge">Phase 02</span>
                   <div class="work-step">
                     <h4>Understand the Audience</h4>
                     <p>We map who you're trying to reach—broad generations (Gen Z, Millennial) and specific sub-niches (sports, education, beauty, gaming)—so targeting isn't a guess.</p>
@@ -412,14 +156,19 @@
                 </div>
               </div>
 
-              <!-- Card 2: Strategy Phase -->
-              <div class="eagle-card" data-index="1">
+              <div class="eagle-card" data-index="2">
                 <div class="card-inner-layout">
-                  <span class="card-stage-badge">Phase 02 / Strategy</span>
+                  <span class="card-stage-badge">Phase 03</span>
                   <div class="work-step">
                     <h4>Choose the Right Platform</h4>
                     <p>TikTok, Instagram, YouTube, and others each serve different content styles and audience habits. We pick where your audience actually spends time and pays attention.</p>
                   </div>
+                </div>
+              </div>
+
+              <div class="eagle-card" data-index="3">
+                <div class="card-inner-layout">
+                  <span class="card-stage-badge">Phase 04</span>
                   <div class="work-step">
                     <h4>Match the Right Influencer</h4>
                     <p>We select creators based on real fit with your campaign goal and audience—not just follower count.</p>
@@ -427,14 +176,19 @@
                 </div>
               </div>
 
-              <!-- Card 3: Execution & Analytics Phase -->
-              <div class="eagle-card" data-index="2">
+              <div class="eagle-card" data-index="4">
                 <div class="card-inner-layout">
-                  <span class="card-stage-badge">Phase 03 / Activation</span>
+                  <span class="card-stage-badge">Phase 05</span>
                   <div class="work-step">
                     <h4>Align on Vision</h4>
                     <p>We brief every influencer clearly on your campaign's vision, tone, and creative guidelines, so content stays true to your brand while keeping their authentic voice.</p>
                   </div>
+                </div>
+              </div>
+
+              <div class="eagle-card" data-index="5">
+                <div class="card-inner-layout">
+                  <span class="card-stage-badge">Phase 06</span>
                   <div class="work-step">
                     <h4>Track & Optimize</h4>
                     <p>We monitor performance throughout the campaign and report real ROI—not vanity metrics—so you know exactly what your investment delivered.</p>
@@ -461,7 +215,7 @@
         <summary class="accordion-header">Contact</summary>
         <div class="accordion-content" style="text-align: center;">
           <p class="section-desc" style="max-width: 800px; margin: 20px auto;">
-            If you want quick communication, clear pricing, and creators who fit your brand perfectly, we’re here to make it simple. Share your requirements, and we’ll get back with a clean plan in no time.
+            If you want quick communication, clear pricing, and creators who fit your brand perfectly, we're here to make it simple. Share your requirements, and we'll get back with a clean plan in no time.
           </p>
           <p class="section-desc" style="margin-bottom: 20px;">
             Email us at: <a href="mailto:hello@avlixor.com" class="gradient-text" style="font-weight: 700; text-decoration: underline;">hello@avlixor.com</a>
@@ -481,7 +235,6 @@
   <footer class="footer">
     <div class="container footer-content-wrapper">
       <div class="footer-socials">
-        <!-- Social SVG links remain unchanged -->
         <a href="https://www.instagram.com/avlixor?igsh=MTR4azF5YmE2Mm1scw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
         </a>
@@ -501,54 +254,6 @@
       <p>&copy; 2026 Avlixor. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Script Logic Operations Section -->
-  <script>
-    // 1. Exclusive Accordion toggling logic
-    const accordions = document.querySelectorAll('.accordion-item');
-    accordions.forEach((item) => {
-      item.addEventListener('toggle', (e) => {
-        if (item.open) {
-          accordions.forEach((otherItem) => {
-            if (otherItem !== item) {
-              otherItem.removeAttribute('open');
-            }
-          });
-        }
-      });
-    });
-
-    // 2. Animated Stack Card Engine Shuffling Engine
-    const container = document.querySelector('.stack-cards-container');
-    if (container) {
-      const cards = Array.from(container.querySelectorAll('.eagle-card'));
-      let currentActiveIndex = 0;
-
-      function updateCardStack() {
-        cards.forEach((card, index) => {
-          card.classList.remove('active', 'stack-back', 'stack-deep');
-          
-          if (index === currentActiveIndex) {
-            card.classList.add('active');
-          } else if (index === (currentActiveIndex + 1) % cards.length) {
-            card.classList.add('stack-back');
-          } else if (index === (currentActiveIndex + 2) % cards.length) {
-            card.classList.add('stack-deep');
-          }
-        });
-      }
-
-      cards.forEach((card) => {
-        card.addEventListener('click', (e) => {
-          e.stopPropagation();
-          currentActiveIndex = (currentActiveIndex + 1) % cards.length;
-          updateCardStack();
-        });
-      });
-
-      updateCardStack();
-    }
-  </script>
 
   <script src="script.js"></script>
 </body>

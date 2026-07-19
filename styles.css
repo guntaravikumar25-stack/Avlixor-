@@ -1,4 +1,5 @@
-:root {
+ 
+  :root {
   /* HSL Tailored Dark Mode Palette */
   --bg-color: #030303;
   --bg-surface: #0a0a0c;
@@ -338,6 +339,24 @@ h1, h2, h3, h4 {
   justify-content: center;
 }
 
+/* Hero Logo Images (between hero and accordion sections) */
+.hero-logo-container {
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.hero-logo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero-logo-container {
+    max-width: 240px;
+  }
+}
+
 /* Buttons */
 .cta-button {
   display: inline-flex;
@@ -522,8 +541,7 @@ h1, h2, h3, h4 {
   font-weight: 800;
   font-size: 1.1rem;
 }
-
-/* About Section Card List */
+* About Section Card List */
 .about-card-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -632,7 +650,7 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-/* Fixed: Added stacking isolation context to expanded items to prevent 3D elements overlapping adjacent rows */
+/* Stacking isolation context on expanded items so 3D card elements don't overlap adjacent rows */
 .accordion-item[open] {
   position: relative;
   z-index: 5;
@@ -739,6 +757,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  text-align: left;
 }
 
 .card-stage-badge {
@@ -862,6 +881,10 @@ h1, h2, h3, h4 {
 
 /* ==========================================
    TABLET & DESKTOP MEDIA QUERIES (>768px)
+   Dormant while the viewport is locked to a mobile
+   width via the <meta name="viewport"> tag in index.html.
+   Kept intact so responsive behavior can be restored
+   later just by changing that one meta tag.
    ========================================== */
 @media (min-width: 768px) {
   .hamburger {
@@ -935,11 +958,11 @@ h1, h2, h3, h4 {
   .about-card-list {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .stack-wrapper {
     max-width: 540px; 
   }
-  
+
   .stack-cards-container {
     height: 440px;
   }
@@ -955,6 +978,7 @@ h1, h2, h3, h4 {
 
 /* ==========================================
    DESKTOP MEDIA QUERIES (>1024px)
+   Also dormant while the viewport is locked — see note above.
    ========================================== */
 @media (min-width: 1024px) {
   .header {
@@ -979,22 +1003,22 @@ h1, h2, h3, h4 {
     align-items: flex-start;
     padding-top: 150px;
   }
-  
+
   .hero .hero-content {
     max-width: 800px;
     text-align: left;
   }
-  
+
   .hero .headline {
     font-size: clamp(2.5rem, 6vw, 5rem);
     text-align: left;
   }
-  
+
   .hero .sub-text {
     font-size: 1.2rem;
     text-align: left;
   }
-  
+
   .hero .cta-button {
     margin-right: 12px;
   }
@@ -1009,19 +1033,17 @@ h1, h2, h3, h4 {
     margin: 0 auto;
   }
 
-  /* Fixed: Form layout transforms into a beautiful grid with proper column alignments */
   .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  gap: 24px;
+    gap: 24px;
   }
-  
-  /* Fixed: Forces Subject, Message textareas, and the Submit CTA button to span across full widths smoothly */
+
   .contact-form .form-group-full,
   .contact-form button.cta-button {
     grid-column: span 2;
   }
-  
+
   .contact-form button.cta-button {
     justify-self: start;
     width: auto;

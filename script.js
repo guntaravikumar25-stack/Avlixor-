@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.getElementById('mobile-nav');
   const navLinks = document.querySelectorAll('.nav-menu a, #mobile-nav a');
@@ -6,7 +6,7 @@
   const accordions = document.querySelectorAll('.accordion-item');
 
   // Track anything with an ID now that things are wrapped in accordions
-  const sections = document.querySelectorAll('#what-we-do, #about, #how-we-work-accordion, #contact-accordion, #proposal');
+  const sections = document.querySelectorAll('#what-we-do, #how-we-work, #about, #contact-accordion, #proposal');
 
   // Mobile Menu Toggle
   if (hamburger && mobileNav) {

@@ -3,9 +3,10 @@
   const mobileNav = document.getElementById('mobile-nav');
   const navLinks = document.querySelectorAll('.nav-menu a, #mobile-nav a');
   const header = document.querySelector('.header');
-  
+  const accordions = document.querySelectorAll('.accordion-item');
+
   // Track anything with an ID now that things are wrapped in accordions
-  const sections = document.querySelectorAll('#what-we-do, #about, #contact-accordion, #proposal');
+  const sections = document.querySelectorAll('#what-we-do, #about, #how-we-work-accordion, #contact-accordion, #proposal');
 
   // Mobile Menu Toggle
   if (hamburger && mobileNav) {
@@ -27,11 +28,24 @@
     });
   });
 
+  // Exclusive Accordion Toggling: closes other accordions when one is opened directly
+  accordions.forEach((item) => {
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        accordions.forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.removeAttribute('open');
+          }
+        });
+      }
+    });
+  });
+
   // Smooth Scrolling & Auto-Open Accordion Logic
   document.querySelectorAll('a[href^="#"], a[href*="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       let href = this.getAttribute('href');
-      
+
       // Clean up link hash if it points to a contact anchor 
       if (href === '#contact') href = '#contact-accordion';
 
@@ -41,11 +55,7 @@
         if (target) {
           // If the target is an accordion (<details>), open it up automatically
           if (target.tagName === 'DETAILS') {
-            // Close other open accordions first to match your exclusive behavior
-            document.querySelectorAll('.accordion-item').forEach(item => {
-              if (item !== target) item.removeAttribute('open');
-            });
-            target.open = true;
+            target.open = true; // triggers the 'toggle' handler above, closing siblings
           }
 
           const headerHeight = header ? header.offsetHeight : 70;
@@ -89,7 +99,7 @@
     navLinks.forEach(link => {
       link.classList.remove('active');
       const href = link.getAttribute('href');
-      
+
       // Keep "Contact" highlighting active even though the accordion ID is slightly altered
       if (currentSectionId === 'contact-accordion' && href.includes('#contact')) {
         link.classList.add('active');
@@ -112,7 +122,7 @@
       cards.forEach((card, index) => {
         // Clear existing state layouts
         card.classList.remove('active', 'stack-back', 'stack-deep');
-        
+
         // Calculate dynamic array position relative to the currently active card index
         if (index === currentActiveIndex) {
           card.classList.add('active');
@@ -125,7 +135,7 @@
     }
 
     // Bind individual click listeners to shuffle the card order down the stack deck
-    cards.forEach((card, index) => {
+    cards.forEach((card) => {
       card.addEventListener('click', (e) => {
         e.stopPropagation();
         // Cycle to the next sequential element layer index array position

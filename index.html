@@ -18,6 +18,86 @@
   <!-- Fonts and Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Services & Accordions Section -->
+<section class="section">
+  <div class="container">
+    
+    <!-- How We Work Accordion -->
+    <details class="accordion-item" open>
+      <summary class="accordion-header">How We Work</summary>
+      <div class="accordion-content">
+        <div class="stack-wrapper">
+          <div class="stack-cards-container">
+            <!-- Phase 1 -->
+            <div class="eagle-card active">
+              <div class="card-inner-layout">
+                <span class="card-stage-badge">Phase 01</span>
+                <div class="work-step">
+                  <h4>Discovery & Strategy</h4>
+                  <p>We dive deep into your brand identity, market positioning, and target audience to map out a tailored execution plan.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Phase 2 -->
+            <div class="eagle-card stack-back">
+              <div class="card-inner-layout">
+                <span class="card-stage-badge">Phase 02</span>
+                <div class="work-step">
+                  <h4>Creative Execution</h4>
+                  <p>Our team brings the strategy to life, crafting premium visual assets and high-impact digital experiences.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Phase 3 -->
+            <div class="eagle-card stack-deep">
+              <div class="card-inner-layout">
+                <span class="card-stage-badge">Phase 03</span>
+                <div class="work-step">
+                  <h4>Launch & Optimize</h4>
+                  <p>We deploy the campaign, track performance metrics in real-time, and continuously iterate for maximum ROI.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Contact Accordion -->
+    <details class="accordion-item">
+      <summary class="accordion-header">Get In Touch</summary>
+      <div class="accordion-content">
+        <div class="contact-section-inner">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            
+            <div class="form-group form-group-full">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+            </div>
+            
+            <div class="form-group form-group-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+            </div>
+
+            <!-- Fixed: Added missing form submit button -->
+            <button type="submit" class="cta-button primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
   <link rel="stylesheet" href="styles.css">
 
   <!-- Custom Styles for Accordions and Card Stack Layouts -->
